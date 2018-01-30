@@ -16,12 +16,24 @@ h2 {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
 nav li {
   display: inline-block;
 }
 
 
 /* HEADER SECTION- main banner */
+
+@media only screen and (max-width: 1024px) {
+  .container .header-section {
+    top: 0;
+  }
+}
 
 .mobile {
   display: none;
@@ -54,6 +66,12 @@ nav li {
 
 /* MAIN BANNER */
 
+@media only screen and (max-width: 1024px) {
+  .main-banner {
+    max-height: 22rem;
+  }
+}
+
 .main-banner {
   background-image:
   url("../images/glasses-bg.png");
@@ -68,7 +86,7 @@ nav li {
 .content {
   position: relative;
   top: 10rem;
-  left: 2rem;
+  left: 2rem;  /*This offsets the div by 2rem from the left */
   background-color: white;
   padding: 1.5rem 5rem;
   width: 23rem;
@@ -117,9 +135,15 @@ nav li {
 
 /* COMPANY INFO */
 
+@media only screen and (max-width: 1024px) {
+  .company-info {
+    justify-content: center;
+  }
+  }
+
+
 .company-info {
   display: flex;
-
 }
 
 .info {
@@ -132,6 +156,7 @@ nav li {
   font-size: 1rem;
   background-color: cadetblue;
   padding: .5rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
 
