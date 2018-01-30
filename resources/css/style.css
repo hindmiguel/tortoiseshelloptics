@@ -1,0 +1,150 @@
+/* UNIVERSAL RULES */
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav li {
+  display: inline-block;
+}
+
+
+/* HEADER SECTION- main banner */
+
+.mobile {
+  display: none;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+  position: relative;
+  top: 1rem;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center
+}
+
+.logo-section img {
+  height: 1.5rem;
+  width: auto;
+  margin-right: 1rem;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+/* MAIN BANNER */
+
+.main-banner {
+  background-image:
+  url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+/* BOTTOM CONTENT- main banner */
+
+.content {
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  width: 23rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+
+/* COMPANY Service SECTION */
+
+.company-product {
+  display: flex;
+  justify-content: center; /*
+  margin-top: 3rem;
+  margin-bottom: 3rem; */
+}
+
+.company-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;    /*chech this for spacing */
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  /*padding: 3rem; */
+}
+
+.service-image img {
+  width: 5rem;
+}
+
+.service-image.paper img {
+  width: 3.5rem;
+}
+
+
+/* COMPANY INFO */
+
+.company-info {
+  display: flex;
+
+}
+
+.info {
+  width: 35%;
+  margin-right: 8%;
+}
+
+.info h2 {
+  width: 10rem;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: .5rem 1.25rem;
+}
+
+
+/* FOOTER SECTION */
+
+footer .container {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+footer .container img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
