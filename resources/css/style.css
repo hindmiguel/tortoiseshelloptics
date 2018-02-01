@@ -16,17 +16,13 @@ h2 {
   margin: 0 auto;
 }
 
+
 @media only screen and (max-width: 1024px) {
   .container {
     width: 100%;
   }
 }
-/*
-@media only screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-  }
-} */
+
 
 nav li {
   display: inline-block;
@@ -35,14 +31,16 @@ nav li {
 
 /* HEADER SECTION- main banner */
 
+
 @media only screen and (max-width: 1024px) {
   .container .header-section {
     top: 0;
   }
 }
 
+
 @media only screen and (max-width: 480px) {
-  .logo-text {
+  .logo-text {   /*This rule includes both text in header and text in footer section */
     display: none;
   }
 
@@ -72,7 +70,7 @@ nav li {
 
 .logo-section {
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .logo-section img {
@@ -87,6 +85,7 @@ nav li {
 
 /* MAIN BANNER */
 
+
 @media only screen and (max-width: 1024px) {
   .main-banner {
     max-height: 22rem;
@@ -94,12 +93,13 @@ nav li {
   }
 }
 
+
 @media only screen and (max-width: 480px) {
   .main-banner {
     max-height: 17rem;
-    background-position: center;
   }
 }
+
 
 .main-banner {
   background-image:
@@ -112,6 +112,7 @@ nav li {
 
 /* BOTTOM CONTENT- main banner */
 
+
 @media only screen and (max-width: 1024px) {
   .container .content {
     top: 5rem;
@@ -123,15 +124,15 @@ nav li {
 
   .container .content h1 {
     font-size: 1.5rem;
-    /*padding: .75rem 4rem; */
   }
 }
+
 
 @media only screen and (max-width: 480px) {
   .container .content {
     top: 9rem;
+    height: 1rem;
     width: 100%;
-    text-align: center;
   }
 
   .main-banner .bottom .content h1 {
@@ -163,13 +164,19 @@ nav li {
 
 /* COMPANY Service SECTION */
 
+
 @media only screen and (max-width: 480px) {
   .company-product {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .company-product .company-service {
+    width: 100%;
+  }
 }
+
 
 .company-product {
   display: flex;
@@ -181,11 +188,10 @@ nav li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem;    /*chech this for spacing */
+  margin: 3rem;
   height: 8rem;
   width: 5rem;
   text-align: center;
-  /*padding: 3rem; */
 }
 
 .service-image img {
@@ -199,11 +205,13 @@ nav li {
 
 /* COMPANY INFO */
 
+
 @media only screen and (max-width: 1024px) {
   .company-info {
     justify-content: center;
     }
   }
+
 
 @media only screen and (max-width: 480px) {
   .container .company-info {
@@ -211,14 +219,16 @@ nav li {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .company-info .info {
 
+  .company-info .info {
     width: 100%;
   }
+
   .company-info .info h2 {
     width: 100%;
     text-align: center;
   }
+
   .company-info .info p {
     font-size: .8rem;
     margin-top: 1rem;
@@ -229,6 +239,7 @@ nav li {
 
 .company-info {
   display: flex;
+  justify-content: center;
 }
 
 .info {
@@ -247,25 +258,24 @@ nav li {
 
 /* FOOTER SECTION */
 
+
 @media only screen and (max-width: 480px) {
-  .container .logo-section {
+  .container .final-section {
     display: flex;
     justify-content: center;
   }
-  .container .logo-section {
+}
+
+
+  .final-section {
+    display: flex;
+    align-items: center;
+    background-color: azure;
+    margin-top: 5rem;
     width: 100%;
-    padding: 0;
-  }
 }
 
-footer .container {
-  display: flex;
-  align-items: center;
-  background-color: azure;
-  margin-top: 5rem;
-}
-
-footer .container img {
-  padding: 4rem 1rem 4rem 4rem;
-  height: 1.5rem;
+  .black-logo  {
+    padding: 4rem 1rem 4rem 4rem;
+    height: 1.5rem;
 }
