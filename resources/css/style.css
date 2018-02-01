@@ -21,6 +21,12 @@ h2 {
     width: 100%;
   }
 }
+/*
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+} */
 
 nav li {
   display: inline-block;
@@ -34,6 +40,21 @@ nav li {
     top: 0;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .logo-text {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .header-section .mobile {
+    display: block;
+  }
+}
+
 
 .mobile {
   display: none;
@@ -69,6 +90,14 @@ nav li {
 @media only screen and (max-width: 1024px) {
   .main-banner {
     max-height: 22rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-banner {
+    max-height: 17rem;
+    background-position: center;
   }
 }
 
@@ -82,6 +111,35 @@ nav li {
 }
 
 /* BOTTOM CONTENT- main banner */
+
+@media only screen and (max-width: 1024px) {
+  .container .content {
+    top: 5rem;
+    left: 0;
+    right: 2rem;
+    width: 35%;
+    margin-right: 2rem;
+  }
+
+  .container .content h1 {
+    font-size: 1.5rem;
+    /*padding: .75rem 4rem; */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container .content {
+    top: 9rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-banner .bottom .content h1 {
+    font-size: 1rem;
+
+  }
+}
+
 
 .content {
   position: relative;
@@ -105,11 +163,17 @@ nav li {
 
 /* COMPANY Service SECTION */
 
+@media only screen and (max-width: 480px) {
+  .company-product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 .company-product {
   display: flex;
-  justify-content: center; /*
-  margin-top: 3rem;
-  margin-bottom: 3rem; */
+  justify-content: center;
 }
 
 .company-service {
@@ -138,8 +202,29 @@ nav li {
 @media only screen and (max-width: 1024px) {
   .company-info {
     justify-content: center;
+    }
   }
+
+@media only screen and (max-width: 480px) {
+  .container .company-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
+  .company-info .info {
+
+    width: 100%;
+  }
+  .company-info .info h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .company-info .info p {
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+}
 
 
 .company-info {
@@ -161,6 +246,17 @@ nav li {
 
 
 /* FOOTER SECTION */
+
+@media only screen and (max-width: 480px) {
+  .container .logo-section {
+    display: flex;
+    justify-content: center;
+  }
+  .container .logo-section {
+    width: 100%;
+    padding: 0;
+  }
+}
 
 footer .container {
   display: flex;
